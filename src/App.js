@@ -5,9 +5,7 @@ import UserPage from "./UserPage"
 function App() {
   return (
     <div className="App">
-    
-      <UserPage/>
-      
+      <Admin/>
     </div>
   );
 }

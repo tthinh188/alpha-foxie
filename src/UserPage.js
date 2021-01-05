@@ -1,13 +1,13 @@
 import React from 'react'
 import "./UserPage.css"
 import Header from "./Header"
-import Box from "./Box"
+import QuestionBox from "./QuestionBox"
 
 function UserPage() {
     return (
         <div className="user_page">
             <Header/>
-            <Box/>
+            <QuestionBox/>
         </div>
     )
 }

@@ -1,0 +1,35 @@
+
+.add_question {
+    margin: 0;
+    background: lightblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+}
+
+.add_question .question {
+    display: flex;
+    padding: 15px 15px;
+} 
+
+.answers {
+    padding: 15px 15px;
+    display: flex;
+}
+
+p {
+    padding: 0px 20px;
+}
+
+input {
+    border-radius: 6px;
+    padding: 10px 10px;
+    width: 360px
+}
+
+.buttons {
+    padding-top: 20px;
+}
