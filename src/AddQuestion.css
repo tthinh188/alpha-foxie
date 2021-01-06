@@ -1,7 +1,7 @@
 
 .add_question {
     margin: 0;
-    background: lightblue;
+    background: rgb(131, 210, 236);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,8 +15,8 @@
     padding: 15px 15px;
 } 
 
-.answers {
-    padding: 15px 15px;
+.answer {
+    padding: 15px 25px;
     display: flex;
 }
 
@@ -37,14 +37,28 @@ input {
 .btn {
     padding: 10px;
     color: blue;
+
 }
 
-.removeIcons {
-    padding: 15px;
+.icons {
+    padding: 15px 20px;
     transition: 0.5s ease-in;
+    cursor: pointer;
 }
 
-.removeIcons:hover{
-    transform: scale(1.2);
-    color: red;
+.icons:hover{
+    transform: scale(1.1);
+    color: moccasin;
+}
+
+.answers {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(205, 231, 231);
+    
+}
+
+button {
+    background-color: lightsalmon;
+    cursor: pointer;
 }
