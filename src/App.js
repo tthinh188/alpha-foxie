@@ -1,11 +1,24 @@
+import React from "react";
+
 import './App.css';
 import Admin from "./Admin"
 import UserPage from "./UserPage"
+import Login from "./Login"
+
+import { useStateValue } from "./StateProvider"
 
 function App() {
+  const [{user}, dispatch] = useStateValue();
+
+  // const user = null;
+  
   return (
     <div className="App">
-      <Admin/>
+      {!user ? (
+        <Login />
+      ) : (
+          <Admin />
+        )}
     </div>
   );
 }

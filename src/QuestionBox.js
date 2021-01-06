@@ -30,10 +30,10 @@ const styles = {
         }),
         border: 'red solid 1px',
     },
-    nextquestion: {
-        padding: '20px',
-        backgroundColor: 'gray',
 
+    nextquestion: {
+
+        backgroundColor: 'gray',
     },
 };
 
@@ -46,8 +46,8 @@ function QuestionBox(props) {
 
     const handleChange = (event) => {
         console.log("function called");
+        console.log(event.target.id);
         setColor(color === 'default' ? 'primary' : 'default');
-    
     };
 
     return (
@@ -58,13 +58,11 @@ function QuestionBox(props) {
             </Paper>
             {["1", "2", "3", "4"].map(item =>
                 <Button
+                    id={item}
                     className={classes.answer}
                     onClick={handleChange}
                     variant="contained"
                     color={color}
-                    onChange={() => {
-                        setSelected(!selected);
-                    }}
                 >
                     {item}
                 </Button>)}

@@ -33,3 +33,18 @@ input {
 .buttons {
     padding-top: 20px;
 }
+
+.btn {
+    padding: 10px;
+    color: blue;
+}
+
+.removeIcons {
+    padding: 15px;
+    transition: 0.5s ease-in;
+}
+
+.removeIcons:hover{
+    transform: scale(1.2);
+    color: red;
+}
