@@ -10,7 +10,7 @@ const Answer = ({ text, answer, answerArray, setAnswerArray }) => {
         <div className="answers">
             <p className="answer">{text}</p>
             <RemoveCircleIcon
-                className="icons"
+                className="remove-icon"
                 onClick={deleteHandler}
             />
         </div>

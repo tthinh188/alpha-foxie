@@ -1,17 +1,17 @@
 import React from 'react'
 import Answer from "./Answer"
 
-const AnswerList = ({answerArray, setAnswerArray}) => {
+const AnswerList = ({ answerArray, setAnswerArray }) => {
 
     return (
         <div className="answer-container">
             {answerArray.map((answer) => (
                 <Answer
-                setAnswerArray = {setAnswerArray}
-                answerArray={answerArray}
-                answer={answer}
-                key= {answer.id}
-                text = {answer.text}/>
+                    setAnswerArray={setAnswerArray}
+                    answerArray={answerArray}
+                    answer={answer}
+                    key={answer.id}
+                    text={answer.text} />
             ))}
         </div>
     );

@@ -15,7 +15,7 @@ function App() {
       {!user ? (
         <Login />
       ) : (
-          <Admin />
+          <UserPage />
         )}
     </div>
   );

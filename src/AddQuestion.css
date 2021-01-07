@@ -30,24 +30,22 @@ input {
     width: 360px
 }
 
-.buttons {
-    padding-top: 20px;
+.add_question .answer .add-btn {
+    cursor: pointer;
 }
-
-.btn {
-    padding: 10px;
+.submit-btn {
+    padding-top: 10px;
     color: blue;
-
 }
 
 .icons {
-    padding: 15px 20px;
+    padding: 10px;
     transition: 0.5s ease-in;
     cursor: pointer;
 }
 
 .icons:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
     color: moccasin;
 }
 
@@ -55,10 +53,20 @@ input {
     display: flex;
     justify-content: space-between;
     border: 1px solid rgb(205, 231, 231);
-    
 }
 
-button {
-    background-color: lightsalmon;
+.remove-icon {
+    padding-top : 25px;
+    padding-right: 35px;
+    transition: 0.5s ease-in;
     cursor: pointer;
 }
+
+.remove-icon:hover{
+    color: red;
+}
+
+p {
+    font-weight: 500;
+}
+
